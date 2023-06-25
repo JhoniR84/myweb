@@ -1,0 +1,14 @@
+{
+  "name": "myweb",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.9"
+  }
+}
