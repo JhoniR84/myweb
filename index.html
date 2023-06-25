@@ -4,11 +4,217 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/dist/main.css" />
+    <link rel="stylesheet" href="/src/style/main.css" />
     <title>My Personal Web with Vite App</title>
   </head>
-  <body>
-    <h3 class="bg-red-100">TESTING TAILWIND AND VITE</h3>
-    <script type="module" src="src/lib/main.js"></script>
+  <body class="h-screen flex justify-center items-center">
+    <main class="m-auto min-[500px]">
+      <section
+        class="flex gap-x-4 bg-amber-100 dark:bg-slate-800 rounded-lg px-6 py-4 ring-1 ring-slate-900/5 shadow-xl"
+      >
+        <section class="">
+          <div class="relative w-fit">
+            <img src="cat fp.png" class="h-24 w-24 rounded-full" />
+            <div
+              class="bg-green-400 h-4 w-4 rounded-full border-2 border-white absolute bottom-1 right-2"
+            ></div>
+          </div>
+          <div class="flex justify-center items-center">
+            <h3
+              class="text-slate-900 dark:text-white mt-5 text-base font-semibold tracking-tight"
+            >
+              Jhoni Rahmad
+            </h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="#473bf0"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-check-circle"
+            >
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+          </div>
+        </section>
+
+        <section class="space-y-7">
+          <div>
+            <h3
+              class="text-slate-900 dark:text-white mt-5 text-base font-semibold tracking-tight"
+            >
+              Hi Guys !!!
+            </h3>
+            <p
+              class="text-sm text-slate-900 dark:text-white leading-snug tracking-tighter"
+            >
+              I am a .NET Developer and newcomer to web fullstack technology
+            </p>
+          </div>
+
+          <div class="flex justify-center gap-8">
+            <!-- <div class="space-x-4 animate-pulse">
+              <button id="toggleSun" hidden>
+                <img src="SunLogo.ico" alt="Light Mode" />
+              </button>
+              <button id="toggleMoon">
+                <img src="MoonLogo.ico" alt="Dark Mode" class="" />
+              </button>
+            </div> -->
+            <a href="mailto:jhonirahmad@gmail.com">
+              <button>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                    />
+                  </svg>
+                </div>
+                <div>Contact Me</div>
+              </button>
+            </a>
+            <button id="toggleMoon">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                  />
+                </svg>
+              </div>
+              <div>Dark Mode</div>
+            </button>
+            <button id="toggleSun" hidden>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                  />
+                </svg>
+              </div>
+              <div>Light Mode</div>
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <!-- <section
+        class="bg-orange-50 dark:bg-slate-800 rounded-lg px-6 py-4 ring-1 ring-slate-900/5 shadow-xl space-y-2 flex items-center"
+      >
+        <div
+          class="mt-1 flex justify-center items-center sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6"
+        >
+          <div class="gap-2">
+            <div
+              class="mt-2 flex justify-center items-center text-sm text-gray-500"
+            >
+              <div class="flex justify-center items-center">
+                <div class="relative w-fit">
+                  <img src="cat fp.png" class="h-24 w-24 rounded-full" />
+                  <div
+                    class="bg-green-400 h-4 w-4 rounded-full border-2 border-white absolute bottom-1 right-2"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <h3
+                class="text-slate-900 dark:text-white mt-5 text-base font-semibold tracking-tight"
+              >
+                Jhoni Rahmad
+              </h3>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="#473bf0"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-check-circle"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="flex items-center text-sm text-gray-500">
+            <div>
+              <h3
+                class="text-slate-900 dark:text-white mt-5 text-base font-semibold tracking-tight"
+              >
+                Hi Guys !!!
+              </h3>
+              <p
+                class="text-sm text-slate-900 dark:text-white leading-snug tracking-tighter"
+              >
+                I am a .NET Developer and newcomer to web fullstack technology
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mb-4 flex justify-center items-baseline space-y-4">
+          <div class="space-x-4 animate-pulse">
+            <button id="toggleSun" hidden>
+              <img src="SunLogo.ico" alt="Light Mode" />
+            </button>
+            <button id="toggleMoon">
+              <img src="MoonLogo.ico" alt="Dark Mode" />
+            </button>
+          </div>
+        </div>
+      </section> -->
+    </main>
+    <script>
+      document
+        .querySelector("#toggleMoon")
+        .addEventListener("click", function () {
+          document.documentElement.classList.toggle("dark");
+          document.getElementById("toggleMoon").hidden = true;
+          document.getElementById("toggleSun").hidden = false;
+        });
+
+      document
+        .querySelector("#toggleSun")
+        .addEventListener("click", function () {
+          document.documentElement.classList.toggle("dark");
+          document.getElementById("toggleSun").hidden = true;
+          document.getElementById("toggleMoon").hidden = false;
+        });
+    </script>
   </body>
 </html>
